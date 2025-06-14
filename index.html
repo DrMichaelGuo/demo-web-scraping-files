@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Files Index</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #1d1d1f;
+            background-color: #fbfbfd;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px 30px 30px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 400;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 25px auto;
+            line-height: 1.5;
+        }
+
+        .disclaimer {
+            background-color: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 25px;
+            text-align: center;
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+
+        .disclaimer strong {
+            color: white;
+        }
+
+        .section {
+            margin-bottom: 50px;
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid #f0f0f0;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: #1d1d1f;
+            border-bottom: 2px solid #007aff;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+        }
+
+        li {
+            background: #f9f9f9;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            border: 1px solid #e5e5e7;
+        }
+
+        li:hover {
+            background: #f0f0f0;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        a {
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+            color: #007aff;
+            font-weight: 500;
+            font-size: 1rem;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 122, 255, 0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        a:hover::before {
+            left: 100%;
+        }
+
+        a:hover {
+            color: #0056cc;
+        }
+
+        .file-icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .word-icon::before { content: "📄"; }
+        .excel-icon::before { content: "📊"; }
+        .pdf-icon::before { content: "📕"; }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 15px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            ul {
+                grid-template-columns: 1fr;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Demo Files Index</h1>
+            <p class="subtitle">This is a demo website for web scraping Word, Excel and PDF files. This site is for educational purposes only.</p>
+            
+            <div class="disclaimer">
+                <strong>Educational Notice:</strong> These demo files are created solely for web scraping practice and educational purposes. Please use responsibly and in accordance with applicable laws and website terms of service.
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Word Documents</h2>
+            <ul>
+                <li><a href="downloads/demo_word_1.docx"><span class="file-icon word-icon"></span>demo_word_1.docx</a></li>
+                <li><a href="downloads/demo_word_2.docx"><span class="file-icon word-icon"></span>demo_word_2.docx</a></li>
+                <li><a href="downloads/demo_word_3.docx"><span class="file-icon word-icon"></span>demo_word_3.docx</a></li>
+                <li><a href="downloads/demo_word_4.docx"><span class="file-icon word-icon"></span>demo_word_4.docx</a></li>
+                <li><a href="downloads/demo_word_5.docx"><span class="file-icon word-icon"></span>demo_word_5.docx</a></li>
+                <li><a href="downloads/demo_word_6.docx"><span class="file-icon word-icon"></span>demo_word_6.docx</a></li>
+                <li><a href="downloads/demo_word_7.docx"><span class="file-icon word-icon"></span>demo_word_7.docx</a></li>
+                <li><a href="downloads/demo_word_8.docx"><span class="file-icon word-icon"></span>demo_word_8.docx</a></li>
+                <li><a href="downloads/demo_word_9.docx"><span class="file-icon word-icon"></span>demo_word_9.docx</a></li>
+                <li><a href="downloads/demo_word_10.docx"><span class="file-icon word-icon"></span>demo_word_10.docx</a></li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Excel Spreadsheets</h2>
+            <ul>
+                <li><a href="downloads/demo_excel_1.xlsx"><span class="file-icon excel-icon"></span>demo_excel_1.xlsx</a></li>
+                <li><a href="downloads/demo_excel_2.xlsx"><span class="file-icon excel-icon"></span>demo_excel_2.xlsx</a></li>
+                <li><a href="downloads/demo_excel_3.xlsx"><span class="file-icon excel-icon"></span>demo_excel_3.xlsx</a></li>
+                <li><a href="downloads/demo_excel_4.xlsx"><span class="file-icon excel-icon"></span>demo_excel_4.xlsx</a></li>
+                <li><a href="downloads/demo_excel_5.xlsx"><span class="file-icon excel-icon"></span>demo_excel_5.xlsx</a></li>
+                <li><a href="downloads/demo_excel_6.xlsx"><span class="file-icon excel-icon"></span>demo_excel_6.xlsx</a></li>
+                <li><a href="downloads/demo_excel_7.xlsx"><span class="file-icon excel-icon"></span>demo_excel_7.xlsx</a></li>
+                <li><a href="downloads/demo_excel_8.xlsx"><span class="file-icon excel-icon"></span>demo_excel_8.xlsx</a></li>
+                <li><a href="downloads/demo_excel_9.xlsx"><span class="file-icon excel-icon"></span>demo_excel_9.xlsx</a></li>
+                <li><a href="downloads/demo_excel_10.xlsx"><span class="file-icon excel-icon"></span>demo_excel_10.xlsx</a></li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>PDF Files</h2>
+            <ul>
+                <li><a href="downloads/demo_pdf_1.pdf"><span class="file-icon pdf-icon"></span>demo_pdf_1.pdf</a></li>
+                <li><a href="downloads/demo_pdf_2.pdf"><span class="file-icon pdf-icon"></span>demo_pdf_2.pdf</a></li>
+                <li><a href="downloads/demo_pdf_3.pdf"><span class="file-icon pdf-icon"></span>demo_pdf_3.pdf</a></li>
+                <li><a href="downloads/demo_pdf_4.pdf"><span class="file-icon pdf-icon"></span>demo_pdf_4.pdf</a></li>
+                <li><a href="downloads/demo_pdf_5.pdf"><span class="file-icon pdf-icon"></span>demo_pdf_5.pdf</a></li>
+                <li><a href="downloads/demo_pdf_6.pdf"><span class="file-icon pdf-icon"></span>demo_pdf_6.pdf</a></li>
+                <li><a href="downloads/demo_pdf_7.pdf"><span class="file-icon pdf-icon"></span>demo_pdf_7.pdf</a></li>
+                <li><a href="downloads/demo_pdf_8.pdf"><span class="file-icon pdf-icon"></span>demo_pdf_8.pdf</a></li>
+                <li><a href="downloads/demo_pdf_9.pdf"><span class="file-icon pdf-icon"></span>demo_pdf_9.pdf</a></li>
+                <li><a href="downloads/demo_pdf_10.pdf"><span class="file-icon pdf-icon"></span>demo_pdf_10.pdf</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
