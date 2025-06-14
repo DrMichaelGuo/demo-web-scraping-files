@@ -1,2 +1,8 @@
+
 User-agent: *
 Allow: /
+
+Allow: /downloads/
+Allow: /downloads/*.docx
+Allow: /downloads/*.xlsx
+Allow: /downloads/*.pdf
